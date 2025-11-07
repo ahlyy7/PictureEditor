@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tinpaintmaskfunctionabstract.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tnormalinpaintmaskfunction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tgrabcutinpaintmaskfunction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="abstractimageprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="noprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="grayscaleprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fastcompressionprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="freecompressionprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="simplerotateprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="freerotateprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="normalcropprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="anycropprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="binarizationprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="simpleblurprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="medianblurprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="abstractimageblurprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="gaussianblurprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="bilateralblurprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="abstractimageadjustprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lightnessadjustprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="contrastadjustprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="saturationadjustprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sharpnessadjustprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="abstractimagethreshscaleadjustprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="brightthreshscaleadjustprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="darkthreshscaleadjustprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="flipprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graffitiprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="equalizehistimageprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inpaintprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tinpaintmaskfunctionabstract.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tnormalinpaintmaskfunction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tgrabcutinpaintmaskfunction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="abstractimageprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="grayscaleprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="noprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="fastcompressionprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="freecompressionprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="simplerotateprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="freerotateprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="normalcropprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="anycropprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="binarizationprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="simpleblurprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="medianblurprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="abstractimageblurprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="gaussianblurprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="bilateralblurprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="abstractimageadjustprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="lightnessadjustprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="contrastadjustprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="saturationadjustprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="sharpnessadjustprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="abstractimagethreshscaleadjustprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="brightthreshscaleadjustprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="darkthreshscaleadjustprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="flipprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="graffitiprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="equalizehistimageprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+    <QtMoc Include="inpaintprocess.h">
+      <Filter>头文件</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

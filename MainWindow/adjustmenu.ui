@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdjustMenu</class>
+ <widget class="QMenu" name="AdjustMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>121</width>
+    <height>213</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="title">
+   <string>调节</string>
+  </property>
+  <widget class="QMenu" name="menu">
+   <property name="geometry">
+    <rect>
+     <x>382</x>
+     <y>138</y>
+     <width>121</width>
+     <height>98</height>
+    </rect>
+   </property>
+   <property name="windowTitle">
+    <string>Form</string>
+   </property>
+   <property name="title">
+    <string>对比度</string>
+   </property>
+   <addaction name="contrastAdjust"/>
+   <addaction name="equalizeHist"/>
+  </widget>
+  <action name="lightnessAdjust">
+   <property name="text">
+    <string>亮度</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="contrastAdjust">
+   <property name="text">
+    <string>手动调节</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="saturationAdjust">
+   <property name="text">
+    <string>饱和度</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="sharpnessAdjust">
+   <property name="text">
+    <string>锐度</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="brightAdjust">
+   <property name="text">
+    <string>亮部</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="darkAdjust">
+   <property name="text">
+    <string>暗部</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="equalizeHist">
+   <property name="text">
+    <string>直方图均衡</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <addaction name="lightnessAdjust"/>
+  <addaction name="menu"/>
+  <addaction name="saturationAdjust"/>
+  <addaction name="sharpnessAdjust"/>
+  <addaction name="brightAdjust"/>
+  <addaction name="darkAdjust"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

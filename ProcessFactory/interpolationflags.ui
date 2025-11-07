@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InterpolationFlags</class>
+ <widget class="QWidget" name="InterpolationFlags">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QComboBox" name="comboBox">
+     <property name="currentIndex">
+      <number>-1</number>
+     </property>
+     <property name="placeholderText">
+      <string>&lt;选择插值方法&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>最近邻插值</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>双线性插值</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>双三次插值</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>像素区域重采样</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>兰克索斯插值（超过 8 × 8 个领域）</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

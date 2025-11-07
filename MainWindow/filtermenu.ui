@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FilterMenu</class>
+ <widget class="QMenu" name="FilterMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="title">
+   <string>滤镜</string>
+  </property>
+  <widget class="QMenu" name="menu">
+   <property name="title">
+    <string>模糊</string>
+   </property>
+   <addaction name="simpeBlur"/>
+   <addaction name="medianBlur"/>
+   <addaction name="gaussianBlur"/>
+   <addaction name="bilateralBlur"/>
+  </widget>
+  <action name="grayscale">
+   <property name="text">
+    <string>灰度化</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="binarization">
+   <property name="text">
+    <string>黑白化</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="simpeBlur">
+   <property name="text">
+    <string>简单模糊</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="medianBlur">
+   <property name="text">
+    <string>中值模糊</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="gaussianBlur">
+   <property name="text">
+    <string>高斯模糊</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="bilateralBlur">
+   <property name="text">
+    <string>双边模糊</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <addaction name="grayscale"/>
+  <addaction name="binarization"/>
+  <addaction name="menu"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

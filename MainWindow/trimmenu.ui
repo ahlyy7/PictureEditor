@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TrimMenu</class>
+ <widget class="QMenu" name="TrimMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="title">
+   <string>修剪</string>
+  </property>
+  <widget class="QMenu" name="menu">
+   <property name="title">
+    <string>旋转</string>
+   </property>
+   <addaction name="simpleRotate"/>
+   <addaction name="freeRotate"/>
+  </widget>
+  <widget class="QMenu" name="menu_2">
+   <property name="title">
+    <string>裁剪</string>
+   </property>
+   <addaction name="normalCropping"/>
+   <addaction name="anyCropping"/>
+  </widget>
+  <action name="simpleRotate">
+   <property name="text">
+    <string>简单旋转</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="freeRotate">
+   <property name="text">
+    <string>自由旋转</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="normalCropping">
+   <property name="text">
+    <string>标准裁剪</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="anyCropping">
+   <property name="text">
+    <string>任意裁剪</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="flip">
+   <property name="text">
+    <string>翻转</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <addaction name="flip"/>
+  <addaction name="menu"/>
+  <addaction name="menu_2"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

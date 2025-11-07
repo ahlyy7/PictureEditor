@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CompressionMenu</class>
+ <widget class="QMenu" name="CompressionMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>121</width>
+    <height>75</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="title">
+   <string>图片压缩</string>
+  </property>
+  <action name="fastCompression">
+   <property name="text">
+    <string>快速压缩</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="freeCompression">
+   <property name="text">
+    <string>自由压缩</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <addaction name="fastCompression"/>
+  <addaction name="freeCompression"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

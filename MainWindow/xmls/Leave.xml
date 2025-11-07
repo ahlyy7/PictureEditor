@@ -1,0 +1,11 @@
+<html>
+	<head/>
+	<body>
+		<p align="center">
+			<img src=":/MainWindow/images/icons/MynauiImage.svg"/>
+		</p>
+		<p align="center">
+			<span style=" font-size:24pt; font-weight:700; color:#ffffff;">打开图片</span>
+		</p>
+	</body>
+</html>

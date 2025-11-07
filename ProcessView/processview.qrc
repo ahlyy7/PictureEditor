@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/ProcessView">
+        <file>images/icons/MingcuteHandGrabFill.svg</file>
+        <file>images/icons/PepiconsPopLineSlantDown.svg</file>
+        <file>images/icons/MaterialSymbolsLineCurveRounded.svg</file>
+        <file>images/icons/MaterialSymbolsRedo.svg</file>
+        <file>images/icons/MaterialSymbolsUndo.svg</file>
+        <file>images/icons/TablerRectangle.svg</file>
+        <file>images/icons/MdiEllipseOutline.svg</file>
+        <file>images/icons/TablerCircle.svg</file>
+        <file>images/icons/TdesignTextbox.svg</file>
+        <file>images/icons/SolarEraserLineDuotone.svg</file>
+    </qresource>
+</RCC>

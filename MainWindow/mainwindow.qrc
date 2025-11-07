@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/MainWindow">
+        <file>images/icons/MynauiImage.svg</file>
+        <file>images/icons/GardenOriginalSizeFill16.svg</file>
+        <file>images/icons/MaterialSymbolsFitPageHeightOutlineRounded.svg</file>
+        <file>images/icons/MaterialSymbolsFitPageWidthOutlineRounded.svg</file>
+        <file>images/icons/SolarMultipleForwardLeftBroken.svg</file>
+        <file>images/icons/SolarMultipleForwardRightBroken.svg</file>
+        <file>images/icons/MaterialSymbolsCloseRounded.svg</file>
+        <file>xmls/Enter.xml</file>
+        <file>xmls/Leave.xml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AlteredMenu</class>
+ <widget class="QMenu" name="AlteredMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>121</width>
+    <height>98</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="title">
+   <string>涂改</string>
+  </property>
+  <action name="graffiti">
+   <property name="text">
+    <string>涂鸦</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="inpaint">
+   <property name="text">
+    <string>消除</string>
+   </property>
+   <property name="toolTip">
+    <string>选择消除区域</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <addaction name="graffiti"/>
+  <addaction name="inpaint"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

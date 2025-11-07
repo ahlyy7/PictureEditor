@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{84406F34-C59A-4FFB-8C73-3ED142A84576}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>6.8.1_msvc2022_64</QtInstall>
+    <QtModules>core;widgets;gui</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>6.8.1_msvc2022_64</QtInstall>
+    <QtModules>core;widgets;gui</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <ExternalIncludePath>$(SolutionDir)GraphicsItem;$(SolutionDir)DegreesRadiansChange;$(SolutionDir)PictureDisplay;$(SolutionDir)ProcessView;$(SolutionDir)ImageProcessing;$(SolutionDir)FilterWindow;$(ExternalIncludePath)</ExternalIncludePath>
+    <IncludePath>D:\opencv\build\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <ExternalIncludePath>$(SolutionDir)GraphicsItem;$(SolutionDir)DegreesRadiansChange;$(SolutionDir)PictureDisplay;$(SolutionDir)ProcessView;$(SolutionDir)ImageProcessing;$(SolutionDir)FilterWindow;$(ExternalIncludePath)</ExternalIncludePath>
+    <IncludePath>D:\opencv\build\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>PROCESSFACTORY_LIB;BUILD_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>PROCESSFACTORY_LIB;BUILD_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="tadjustprocessfactoryabstract.cpp" />
+    <ClCompile Include="tanycropprocessfactory.cpp" />
+    <ClCompile Include="tbilateralblurprocessfactory.cpp" />
+    <ClCompile Include="tbinarizationprocessfactory.cpp" />
+    <ClCompile Include="tblurprocessfactoryabstract.cpp" />
+    <ClCompile Include="tbrightthreshscaleadjustprocessfactory.cpp" />
+    <ClCompile Include="tcontrastadjustprocessfactory.cpp" />
+    <ClCompile Include="tdarkthreshscaleadjustprocessfactory.cpp" />
+    <ClCompile Include="tequalizehistprocessfactory.cpp" />
+    <ClCompile Include="tflipprocessfactory.cpp" />
+    <ClCompile Include="tfreerotateprocessfactory.cpp" />
+    <ClCompile Include="tgaussianblurprocessfactory.cpp" />
+    <ClCompile Include="tgraffitiprocessfactory.cpp" />
+    <ClCompile Include="tinpaintprocessfactory.cpp" />
+    <ClCompile Include="tlightnessadjustprocessfactory.cpp" />
+    <ClCompile Include="tmedianblurprocessfactory.cpp" />
+    <ClCompile Include="tnormalcropprocessfactory.cpp" />
+    <ClCompile Include="tsaturationadjustprocessfactory.cpp" />
+    <ClCompile Include="tsharpnessadjustprocessfactory.cpp" />
+    <ClCompile Include="tsimpeblurprocessfactory.cpp" />
+    <ClCompile Include="tsimplerotateprocessfactory.cpp" />
+    <ClCompile Include="tthreshscaleadjustprocessfactoryabstract.cpp" />
+    <QtMoc Include="tinpaintprocessfactory.h" />
+    <QtMoc Include="tequalizehistprocessfactory.h" />
+    <QtMoc Include="tgraffitiprocessfactory.h" />
+    <QtMoc Include="tflipprocessfactory.h" />
+    <QtMoc Include="tdarkthreshscaleadjustprocessfactory.h" />
+    <QtMoc Include="tbrightthreshscaleadjustprocessfactory.h" />
+    <QtMoc Include="tthreshscaleadjustprocessfactoryabstract.h" />
+    <QtMoc Include="tsharpnessadjustprocessfactory.h" />
+    <QtMoc Include="tsaturationadjustprocessfactory.h" />
+    <QtMoc Include="tcontrastadjustprocessfactory.h" />
+    <QtMoc Include="tlightnessadjustprocessfactory.h" />
+    <QtMoc Include="tadjustprocessfactoryabstract.h" />
+    <QtMoc Include="tbilateralblurprocessfactory.h" />
+    <QtMoc Include="tgaussianblurprocessfactory.h" />
+    <QtMoc Include="tblurprocessfactoryabstract.h" />
+    <QtMoc Include="tmedianblurprocessfactory.h" />
+    <QtMoc Include="tsimpeblurprocessfactory.h" />
+    <QtMoc Include="tbinarizationprocessfactory.h" />
+    <QtMoc Include="tanycropprocessfactory.h" />
+    <QtMoc Include="tnormalcropprocessfactory.h" />
+    <QtMoc Include="tfreerotateprocessfactory.h" />
+    <QtMoc Include="tsimplerotateprocessfactory.h" />
+    <QtMoc Include="horizontalline.h" />
+    <ClInclude Include="processfactory_global.h" />
+    <QtMoc Include="tfreecompressionprocessfactory.h" />
+    <QtMoc Include="tfastcompressionprocessfactory.h" />
+    <QtMoc Include="tnoprocessfactory.h" />
+    <QtMoc Include="tgrayscaleprocessfactory.h" />
+    <QtMoc Include="tprocessfactoryabstract.h" />
+    <ClCompile Include="horizontalline.cpp" />
+    <ClCompile Include="tfastcompressionprocessfactory.cpp" />
+    <ClCompile Include="tfreecompressionprocessfactory.cpp" />
+    <ClCompile Include="tgrayscaleprocessfactory.cpp" />
+    <ClCompile Include="tnoprocessfactory.cpp" />
+    <ClCompile Include="tprocessfactoryabstract.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="anycroptargetpoints.ui" />
+    <QtUic Include="bilateralblursigma.ui" />
+    <QtUic Include="binarizationthreshold.ui" />
+    <QtUic Include="fastcompressioncounter.ui" />
+    <QtUic Include="flipcode.ui" />
+    <QtUic Include="freecompressioncompressibility.ui" />
+    <QtUic Include="freerotatebordercolor.ui" />
+    <QtUic Include="freerotatesize.ui" />
+    <QtUic Include="gaussianblursigma.ui" />
+    <QtUic Include="interpolationflags.ui" />
+    <QtUic Include="freerotatescale.ui" />
+    <QtUic Include="horizontalline.ui" />
+    <QtUic Include="normalcropquadrilateral.ui" />
+    <QtUic Include="simplerotaterotatecode.ui" />
+    <QtUic Include="freerotateangle.ui" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

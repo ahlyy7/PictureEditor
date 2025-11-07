@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="processfactory_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="tprocessfactoryabstract.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="tprocessfactoryabstract.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tgrayscaleprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tnoprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tfastcompressionprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tfreecompressionprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="horizontalline.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tsimplerotateprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tfreerotateprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tnormalcropprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tanycropprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tbinarizationprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tsimpeblurprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tmedianblurprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tblurprocessfactoryabstract.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tgaussianblurprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tbilateralblurprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tadjustprocessfactoryabstract.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tlightnessadjustprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tcontrastadjustprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tsaturationadjustprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tsharpnessadjustprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tthreshscaleadjustprocessfactoryabstract.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tbrightthreshscaleadjustprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tdarkthreshscaleadjustprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tflipprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tgraffitiprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tequalizehistprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tinpaintprocessfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tgrayscaleprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tnoprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tfastcompressionprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tfreecompressionprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="horizontalline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tsimplerotateprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tfreerotateprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tnormalcropprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tanycropprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tbinarizationprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tsimpeblurprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmedianblurprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tblurprocessfactoryabstract.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tgaussianblurprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tbilateralblurprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tadjustprocessfactoryabstract.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tlightnessadjustprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tcontrastadjustprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tsaturationadjustprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tsharpnessadjustprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tthreshscaleadjustprocessfactoryabstract.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tbrightthreshscaleadjustprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tdarkthreshscaleadjustprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tflipprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tgraffitiprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tequalizehistprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tinpaintprocessfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="fastcompressioncounter.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="freecompressioncompressibility.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="interpolationflags.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="horizontalline.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="simplerotaterotatecode.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="freerotateangle.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="freerotatescale.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="freerotatebordercolor.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="freerotatesize.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="normalcropquadrilateral.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="anycroptargetpoints.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="binarizationthreshold.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="gaussianblursigma.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="bilateralblursigma.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="flipcode.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+</Project>

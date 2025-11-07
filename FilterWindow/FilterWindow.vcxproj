@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="filterwindow_global.h" />
+    <ClInclude Include="getinversecolor.h" />
+    <QtMoc Include="terasergraffitifilterwindow.h" />
+    <QtMoc Include="tpolylinesgraffitifilterwindowabstract.h" />
+    <QtMoc Include="ttextgraffitifilterwindow.h" />
+    <QtMoc Include="tbrushgraffitifilterwindowabstract.h" />
+    <QtMoc Include="tellipsegraffitifilterwindow.h" />
+    <QtMoc Include="trectgraffitifilterwindow.h" />
+    <QtMoc Include="tpolylinesgraffitifilterwindow.h" />
+    <QtMoc Include="tnograffitifilterwindow.h" />
+    <QtMoc Include="tlinegraffitifilterwindow.h" />
+    <QtMoc Include="tdrawoperationfilterwindow.h" />
+    <QtMoc Include="tgraphicsstackfilterwindow.h" />
+    <QtMoc Include="tgraffitifilterwindowabstract.h" />
+    <QtMoc Include="tanyquadrilateralfilterwindow.h" />
+    <QtMoc Include="tnofilterwindow.h" />
+    <QtMoc Include="tfilterwindowabstract.h" />
+    <QtMoc Include="trecthollowfilterwindow.h" />
+    <QtMoc Include="tsolidcolorfilterwindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="getinversecolor.cpp" />
+    <ClCompile Include="tbrushgraffitifilterwindowabstract.cpp" />
+    <ClCompile Include="tdrawoperationfilterwindow.cpp" />
+    <ClCompile Include="tellipsegraffitifilterwindow.cpp" />
+    <ClCompile Include="terasergraffitifilterwindow.cpp" />
+    <ClCompile Include="tgraffitifilterwindowabstract.cpp" />
+    <ClCompile Include="tanyquadrilateralfilterwindow.cpp" />
+    <ClCompile Include="tfilterwindowabstract.cpp" />
+    <ClCompile Include="tgraphicsstackfilterwindow.cpp" />
+    <ClCompile Include="tlinegraffitifilterwindow.cpp" />
+    <ClCompile Include="tnofilterwindow.cpp" />
+    <ClCompile Include="tnograffitifilterwindow.cpp" />
+    <ClCompile Include="tpolylinesgraffitifilterwindow.cpp" />
+    <ClCompile Include="tpolylinesgraffitifilterwindowabstract.cpp" />
+    <ClCompile Include="trectgraffitifilterwindow.cpp" />
+    <ClCompile Include="trecthollowfilterwindow.cpp" />
+    <ClCompile Include="tsolidcolorfilterwindow.cpp" />
+    <ClCompile Include="ttextgraffitifilterwindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="tbrushgraffitifilterwindowabstract.ui" />
+    <QtUic Include="tdrawoperationfilterwindow.ui" />
+    <QtUic Include="tellipsegraffitifilterwindow.ui" />
+    <QtUic Include="terasergraffitifilterwindow.ui" />
+    <QtUic Include="tgraffitifilterwindowabstract.ui" />
+    <QtUic Include="tanyquadrilateralfilterwindow.ui" />
+    <QtUic Include="tfilterwindowabstract.ui" />
+    <QtUic Include="tgraphicsstackfilterwindow.ui" />
+    <QtUic Include="tlinegraffitifilterwindow.ui" />
+    <QtUic Include="tnofilterwindow.ui" />
+    <QtUic Include="tnograffitifilterwindow.ui" />
+    <QtUic Include="tpolylinesgraffitifilterwindow.ui" />
+    <QtUic Include="tpolylinesgraffitifilterwindowabstract.ui" />
+    <QtUic Include="trectgraffitifilterwindow.ui" />
+    <QtUic Include="trecthollowfilterwindow.ui" />
+    <QtUic Include="tsolidcolorfilterwindow.ui" />
+    <QtUic Include="ttextgraffitifilterwindow.ui" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6B76608B-A67C-4920-9000-5CDDED53D7FD}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>6.8.1_msvc2022_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>6.8.1_msvc2022_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <ExternalIncludePath>$(SolutionDir)GraphicsItem;$(ExternalIncludePath)</ExternalIncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <ExternalIncludePath>$(SolutionDir)GraphicsItem;$(ExternalIncludePath)</ExternalIncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>FILTERWINDOW_LIB;BUILD_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>FILTERWINDOW_LIB;BUILD_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TGraffitiProcessViewWidgetClass</class>
+ <widget class="TProcessViewWidgetAbstract" name="TGraffitiProcessViewWidgetClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>178</width>
+    <height>834</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TGraffitiProcessViewWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QToolButton" name="undoButton"/>
+      </item>
+      <item>
+       <widget class="QToolButton" name="redoButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="toolButtonGroupBox">
+     <property name="title">
+      <string>选择绘制图案：</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <item>
+       <widget class="QToolButton" name="noGraffiti">
+        <property name="icon">
+         <iconset resource="processview.qrc">
+          <normaloff>:/ProcessView/images/icons/MingcuteHandGrabFill.svg</normaloff>:/ProcessView/images/icons/MingcuteHandGrabFill.svg</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QToolButton" name="lineGraffiti">
+          <property name="text">
+           <string>线条</string>
+          </property>
+          <property name="icon">
+           <iconset resource="processview.qrc">
+            <normaloff>:/ProcessView/images/icons/PepiconsPopLineSlantDown.svg</normaloff>:/ProcessView/images/icons/PepiconsPopLineSlantDown.svg</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="polylinesGraffiti">
+          <property name="text">
+           <string>曲线</string>
+          </property>
+          <property name="icon">
+           <iconset resource="processview.qrc">
+            <normaloff>:/ProcessView/images/icons/MaterialSymbolsLineCurveRounded.svg</normaloff>:/ProcessView/images/icons/MaterialSymbolsLineCurveRounded.svg</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="eraserGraffiti">
+          <property name="icon">
+           <iconset resource="processview.qrc">
+            <normaloff>:/ProcessView/images/icons/SolarEraserLineDuotone.svg</normaloff>:/ProcessView/images/icons/SolarEraserLineDuotone.svg</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_2" native="true"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QToolButton" name="rectGraffiti">
+          <property name="icon">
+           <iconset resource="processview.qrc">
+            <normaloff>:/ProcessView/images/icons/TablerRectangle.svg</normaloff>:/ProcessView/images/icons/TablerRectangle.svg</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="ellipseGraffiti">
+          <property name="icon">
+           <iconset resource="processview.qrc">
+            <normaloff>:/ProcessView/images/icons/MdiEllipseOutline.svg</normaloff>:/ProcessView/images/icons/MdiEllipseOutline.svg</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="textGraffiti">
+          <property name="icon">
+           <iconset resource="processview.qrc">
+            <normaloff>:/ProcessView/images/icons/TdesignTextbox.svg</normaloff>:/ProcessView/images/icons/TdesignTextbox.svg</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_7" native="true"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="TListProcessViewWidget" name="additionList" native="true"/>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="penGroupBox">
+     <property name="title">
+      <string>画笔</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="penWidget" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QGroupBox" name="penColorGroupBox">
+           <property name="title">
+            <string>选择颜色：</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="1,0,1">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="widget_17" native="true"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="penColorButton">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 255);</string>
+              </property>
+              <property name="text">
+               <string>rgba(0, 0, 0, 255)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_18" native="true"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="penWidthGroupBox">
+           <property name="title">
+            <string>选择宽度：</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_12" stretch="1,0,1">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="widget_23" native="true"/>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="penWidthSpinBox">
+              <property name="frame">
+               <bool>false</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignmentFlag::AlignCenter</set>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+              </property>
+              <property name="specialValueText">
+               <string>最细宽度</string>
+              </property>
+              <property name="suffix">
+               <string> px</string>
+              </property>
+              <property name="maximum">
+               <double>100.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.010000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_24" native="true"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="penStyleGroupBox">
+           <property name="title">
+            <string>设置线型：</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="1,0,0,0,0,0,1">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="widget_21" native="true"/>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="SolidLine"/>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="DashLine"/>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="DotLine"/>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="DashDotLine"/>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="DashDotDotLine"/>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_22" native="true"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="penCapStyleGroupBox">
+           <property name="title">
+            <string>设置线端：</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="1,0,1">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="widget_19" native="true"/>
+            </item>
+            <item>
+             <layout class="QGridLayout" name="gridLayout_5">
+              <item row="1" column="1">
+               <widget class="QRadioButton" name="SquareCap"/>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_8">
+                <property name="text">
+                 <string>不覆盖端点的方形线端</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_9">
+                <property name="text">
+                 <string>圆形线端</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QRadioButton" name="RoundCap"/>
+              </item>
+              <item row="0" column="1">
+               <widget class="QRadioButton" name="FlatCap"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_10">
+                <property name="text">
+                 <string>覆盖端点的方形线端</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_20" native="true"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="penJoinStyleGroupBox">
+           <property name="title">
+            <string>设置连接端点：</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_13" stretch="1,0,1">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="widget_25" native="true"/>
+            </item>
+            <item>
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="2" column="1">
+               <widget class="QRadioButton" name="RoundJoin"/>
+              </item>
+              <item row="1" column="1">
+               <widget class="QRadioButton" name="BevelJoin"/>
+              </item>
+              <item row="3" column="1">
+               <widget class="QRadioButton" name="SvgMiterJoin"/>
+              </item>
+              <item row="0" column="1">
+               <widget class="QRadioButton" name="MiterJoin"/>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_11">
+                <property name="text">
+                 <string>延伸填充</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_12">
+                <property name="text">
+                 <string>三角填充</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_13">
+                <property name="text">
+                 <string>圆弧填充</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_14">
+                <property name="text">
+                 <string>SVG延伸填充</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_26" native="true"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="brushGroupBox">
+     <property name="title">
+      <string>填充</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="brushWidget" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QGroupBox" name="brushColorGroupBox">
+           <property name="title">
+            <string>选择颜色：</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,0,1">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="widget_5" native="true"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="brushColorButton">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 255);</string>
+              </property>
+              <property name="text">
+               <string>rgba(0, 0, 0, 255)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_6" native="true"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="brushStyleGroupBox">
+           <property name="title">
+            <string>设置填充类型：</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="1,0,1">
+            <item>
+             <widget class="QWidget" name="widget_3" native="true"/>
+            </item>
+            <item>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <widget class="QRadioButton" name="SolidPattern"/>
+              </item>
+              <item row="0" column="1">
+               <widget class="QRadioButton" name="Dense1Pattern"/>
+              </item>
+              <item row="0" column="2">
+               <widget class="QRadioButton" name="Dense2Pattern"/>
+              </item>
+              <item row="0" column="3">
+               <widget class="QRadioButton" name="Dense3Pattern"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QRadioButton" name="Dense4Pattern"/>
+              </item>
+              <item row="1" column="1">
+               <widget class="QRadioButton" name="Dense5Pattern"/>
+              </item>
+              <item row="1" column="2">
+               <widget class="QRadioButton" name="Dense6Pattern"/>
+              </item>
+              <item row="1" column="3">
+               <widget class="QRadioButton" name="Dense7Pattern"/>
+              </item>
+              <item row="2" column="0">
+               <widget class="QRadioButton" name="HorPattern"/>
+              </item>
+              <item row="2" column="1">
+               <widget class="QRadioButton" name="VerPattern"/>
+              </item>
+              <item row="2" column="2">
+               <widget class="QRadioButton" name="CrossPattern"/>
+              </item>
+              <item row="2" column="3">
+               <widget class="QRadioButton" name="BDiagPattern"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QRadioButton" name="FDiagPattern"/>
+              </item>
+              <item row="3" column="1">
+               <widget class="QRadioButton" name="DiagCrossPattern"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_4" native="true"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+  <action name="undo">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="processview.qrc">
+     <normaloff>:/ProcessView/images/icons/MaterialSymbolsUndo.svg</normaloff>:/ProcessView/images/icons/MaterialSymbolsUndo.svg</iconset>
+   </property>
+   <property name="text">
+    <string>撤销</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="redo">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="processview.qrc">
+     <normaloff>:/ProcessView/images/icons/MaterialSymbolsRedo.svg</normaloff>:/ProcessView/images/icons/MaterialSymbolsRedo.svg</iconset>
+   </property>
+   <property name="text">
+    <string>重做</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>TProcessViewWidgetAbstract</class>
+   <extends>QWidget</extends>
+   <header>tprocessviewwidgetabstract.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TListProcessViewWidget</class>
+   <extends>QWidget</extends>
+   <header>tlistprocessviewwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="processview.qrc"/>
+ </resources>
+ <connections/>
+</ui>

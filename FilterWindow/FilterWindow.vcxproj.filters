@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="filterwindow_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="getinversecolor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tfilterwindowabstract.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trecthollowfilterwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tsolidcolorfilterwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tnofilterwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tanyquadrilateralfilterwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="getinversecolor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tgraffitifilterwindowabstract.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tgraphicsstackfilterwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tdrawoperationfilterwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tlinegraffitifilterwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tnograffitifilterwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpolylinesgraffitifilterwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trectgraffitifilterwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tellipsegraffitifilterwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tbrushgraffitifilterwindowabstract.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ttextgraffitifilterwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tpolylinesgraffitifilterwindowabstract.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="terasergraffitifilterwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="tfilterwindowabstract.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="trecthollowfilterwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="tsolidcolorfilterwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="tnofilterwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="tanyquadrilateralfilterwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="tgraffitifilterwindowabstract.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="tgraphicsstackfilterwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="tdrawoperationfilterwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="tlinegraffitifilterwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="tnograffitifilterwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="tpolylinesgraffitifilterwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="trectgraffitifilterwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="tellipsegraffitifilterwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="tbrushgraffitifilterwindowabstract.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ttextgraffitifilterwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="tpolylinesgraffitifilterwindowabstract.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="terasergraffitifilterwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="tfilterwindowabstract.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="trecthollowfilterwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tsolidcolorfilterwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tnofilterwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tanyquadrilateralfilterwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tgraffitifilterwindowabstract.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tgraphicsstackfilterwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tdrawoperationfilterwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tlinegraffitifilterwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tnograffitifilterwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tpolylinesgraffitifilterwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="trectgraffitifilterwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tellipsegraffitifilterwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tbrushgraffitifilterwindowabstract.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ttextgraffitifilterwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tpolylinesgraffitifilterwindowabstract.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="terasergraffitifilterwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>
